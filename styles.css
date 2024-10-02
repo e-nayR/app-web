@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0; 
+    padding: 0;
+}  
+
+.navbar {
+    top: 0;
+    width: 100%;
+    height: 57px;
+    background-color: #333;
+}
+
+.content {
+    display: flex;
+    /*min-height: 519px;*/
+    flex: 1; 
+}
+
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 57px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+  
