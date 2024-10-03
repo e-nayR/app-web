@@ -4,21 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="categoria.css">
 </head>
 <body>
     <nav class="navbar">
-        <h1 class="title">Chef's Enayr</h1>
-        <a href="">Sobre Mim</a>
-        <a href="">Contato</a>
+        <h1 class="title">Chef's Kisses</h1>
+        <div class="menubar">
+            <a href="" class="sobre-mim">Sobre Mim</a>
+            <a href="" class="contato">Contato</a>    
+        </div>
     </nav>
     <main class="content">
-        <a href="../index.html"><-- Voltar</a><br>
-        <ul>
-            <li><a href="./receitas/lasanha.html">Lasanha a Bolonhesa</a></li>
-            <li><a href="./receitas/macarrao.html">Macarrão ao Molho Branco</a></li>
-            <li><a href="./receitas/frango.html">Frango Acebolado</a></li>
-            <li><a href="./receitas/camarao.html">Arroz de Camarão</a></li>
-        </ul>
+        <a href="../index.html"><-- Voltar</a>
+        <div class="receitas">
+            <div class="receita-container">
+                <div class="receita-container-img">
+                    <img src="../imagens/receitas-cover/arroz.png" alt="" class="receita-img">
+                </div>
+                <div class="receita-info">
+                    <a href="./receitas/camarao.html" class="receita-nome">Arroz de Camarão</a>
+                    <p class="receita-text">É uma receita que combina sofisticação e praticidade, ideal para quem busca um jantar leve e sofisticado, mas com aquele sabor caseiro e acolhedor.</p>
+                    <a href="" class="ver-btn" style="background-color: #FFCC00;">Ver</a>
+                </div>
+            </div>
+            <div class="receita-container">
+                <div class="receita-container-img">
+                    <img src="../imagens/receitas-cover/macarrao.png" alt="" class="receita-img">
+                </div>
+                <div class="receita-info">
+                    <a href="./receitas/macarrao.html" class="receita-nome">Macarrão ao Molho Branco</a>
+                    <p class="receita-text">Simples, mas sofisticado, esse prato é ideal tanto para um jantar rápido quanto para momentos especiais.</p>
+                    <a href="" class="ver-btn" style="background-color: #FFCC00;">Ver</a>
+                </div>
+            </div>
+            <div class="receita-container">
+                <div class="receita-container-img">
+                    <img src="../imagens/receitas-cover/lasanha.png" alt="" class="receita-img">
+                </div>
+                <div class="receita-info">
+                    <a href="./receitas/lasanha.html" class="receita-nome">Lasanha a Bolonhesa</a>
+                    <p class="receita-text">Ideal para um almoço em família ou um jantar especial, esta lasanha agrada a todos os gostos com sua textura equilibrada e sabor irresistível.</p>
+                    <a href="" class="ver-btn" style="background-color: #FFCC00;">Ver</a>
+                </div>
+            </div>
+            <div class="receita-container">
+                <div class="receita-container-img">
+                    <img src="../imagens/receitas-cover/frango.png" alt="" class="receita-img">
+                </div>
+                <div class="receita-info">
+                    <a href="./receitas/frango.html" class="receita-nome">Frango Acebolado</a>
+                    <p class="receita-text">Ideal para acompanhar arroz branco ou uma farofa crocante, esse prato vai impressionar em qualquer ocasião com sua simplicidade e sofisticação.</p>
+                    <a href="" class="ver-btn" style="background-color: #FFCC00;">Ver</a>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Raleway';
+}
+
+h1 {
+    margin: 0; 
+    padding: 0;
+}  
+
+a{
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; 
+}
+
+.navbar {
+    display: flex;
+    height: 65px;
+    background-color: #FF9F62;
+    font-weight: 700;
+    color: #382D23;
+    .title{
+        font-weight: 700;
+        font-size: 36px;
+        margin-top: 12px;
+        margin-left: 31px;
+    }
+    .menubar{
+        margin-left: auto;
+        margin-top: 21px;
+        margin-right: 26px;
+        font-size: 18px;
+        .sobre-mim{
+            margin-right: 40px;
+        }
+        .sobre-mim:hover, .contato:hover{
+            color: white;
+        }
+    }
+}
