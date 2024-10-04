@@ -1,0 +1,116 @@
+body{
+    overflow: hidden;
+}
+
+.content{
+    display: grid;
+    justify-content: center; 
+    align-items: center;
+}
+
+.content-top{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+}
+
+.voltar-btn{
+    position: absolute;
+    left: 0;
+}
+
+.categoria-titulo{
+    text-align: center;
+    font-family: "Inria Sans", system-ui;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.receitas{
+    display: grid;
+    grid-template-columns: repeat(2, 290px);
+    gap: 28px; 
+    justify-content: center;
+}
+
+.receita-container{
+    display: flex;
+}
+
+.receita-container-img{
+    background-size: cover;
+    height: 185px;
+    width: 144px;
+}
+
+.receita-img{
+    max-width: 100%;
+    max-height: auto; 
+}
+
+.receita-info{
+    display: grid;
+    width: 144px;
+    height: 185px; 
+}
+
+.receita-nome{
+    font-weight: 700;
+    font-size: 15px;
+    margin: 5px 0 0 8px;
+}
+
+.receita-text{
+    font-weight: 500;
+    font-size: 11px;
+    margin: 0 10px 0 10px ;
+}
+
+.ver-btn {
+    border-radius: 23px;
+    height: 26px;
+    width: 51px;
+    margin: 0 12px 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media (max-width:769px) {
+    .receitas{
+        gap: 17px; 
+    }
+    .categoria-titulo{
+        font-size: 33px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width:460px) {
+    body{
+        overflow: scroll;
+    }
+    .content-top{
+        flex-direction: column;
+        position: static;  
+    }
+    .voltar-btn{
+        position: static;
+        margin-top: 4px;
+    }
+    .categoria-titulo{
+        font-size: 28px;
+        margin-bottom: 2px;
+    }
+    .receitas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+}
