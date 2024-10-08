@@ -1,9 +1,14 @@
+body{
+    overflow-x: hidden; /* Remove a rolagem horizontal */
+    overflow-y: auto;
+}
+
 ul{
     padding-left: 20px; /* Restaura o espaçamento à esquerda */
     list-style-type: disc; /* Define o estilo do marcador, por exemplo, "disc" */
   }
 ol {
-    padding-left: 20px; /* Restaura o espaçamento à esquerda */
+    padding-left: 20px;
     list-style-type: decimal;
 }
 
@@ -21,11 +26,10 @@ ol {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 644px;
+    width: 650px;
 }
 
 .voltar-btn{
-    text-align: left;
     position: absolute;
     left: 0;
 }
@@ -35,21 +39,20 @@ ol {
     font-size: 30px;
 }
 
+.title-receita,.receita-topico{
+    color: #382D23;
+}
+
 .receita-container-img{
+    margin-left: 20px;
     margin-top: 13px;
     background-size: cover;
     max-width: 300px;
-    max-height: 223px;
 }
 
 .receita-img{
     max-width: 100%;
-}
-
-/* Lista de ingredientes em duas colunas */
-ul.ingredientes {
-    column-count: 2;
-    column-gap: 20px;
+    max-height: 223px;
 }
 
 /* Ajustes para o modo de preparo */
@@ -62,9 +65,38 @@ ul.ingredientes {
 
 .topico-ingredientes{
     display: flex;
-    max-width: 644px;
+    min-width: 644px;
 }
 
 .topico-preparo{
     max-width: 644px;
+    margin-bottom: 30px;
+}
+
+@media (max-width:426px) {
+    .content-top{
+        margin-top: 3px;
+        width: 300px;
+        flex-direction: column;
+        position: static;  
+    }
+    .voltar-btn{
+        position: static;
+        margin-bottom: 3px;
+    }
+    .receita-titulo{
+        font-size: 15px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .topico-ingredientes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .receita-container-img{
+            margin-top: 50px;
+            display: block; /* Faz a imagem se comportar como um bloco */
+            margin: 0 auto;
+        }
+    }
 }
