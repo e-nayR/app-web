@@ -63,6 +63,48 @@ a{
     text-decoration: none;
 }
 
+.card-contato {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card do modal */
+.content-contato {
+    background-color: #fdf9f7;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    .fechar-btn{
+        font-size: 30px;
+        color: #d85504;
+    }
+    h2{
+        color: #382D23;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    p{
+        text-align: left;
+    }
+    .email{
+        text-decoration: underline;
+        color: blue;
+    }
+}
+
+#card-contato:target {
+    display: flex;
+}
+
+
 @media (max-width:769px) {
     .navbar {
         height: 59px;
@@ -87,6 +129,19 @@ a{
             .sobre-mim{
                 margin-right: 10px;
             }
+        }
+    }
+    .content-contato {
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+        width: 250px;
+        height: 200px;
+        .fechar-btn{
+            font-size: 25px;
         }
     }
 }

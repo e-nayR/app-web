@@ -47,7 +47,7 @@ ol {
     margin-left: 20px;
     margin-top: 13px;
     background-size: cover;
-    max-width: 300px;
+    width: 300px;
 }
 
 .receita-img{
@@ -65,12 +65,12 @@ ol {
 
 .topico-ingredientes{
     display: flex;
-    min-width: 644px;
+    max-width: 644px;
 }
 
 .topico-preparo{
     max-width: 644px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 @media (max-width:426px) {
@@ -82,21 +82,34 @@ ol {
     }
     .voltar-btn{
         position: static;
-        margin-bottom: 3px;
     }
-    .receita-titulo{
-        font-size: 15px;
-        margin-top: 3px;
-        margin-bottom: 3px;
+    .title-receita{
+        font-size: 25px;
+    }
+    .receita-topico {
+        font-size: 19px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
     }
     .topico-ingredientes{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .receita-container-img{
-            margin-top: 50px;
-            display: block; /* Faz a imagem se comportar como um bloco */
-            margin: 0 auto;
-        }
+        max-width: 335px;
+    }
+    .topico-preparo{
+        max-width: 335px;
+    }
+    .receita-container-img{
+        margin-top: 10px;
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto;
+        width: auto;
+    }
+}
+
+@media (max-width:321px){
+    .topico-ingredientes,.topico-preparo{
+        padding: 20px;
     }
 }
