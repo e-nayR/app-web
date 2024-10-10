@@ -73,36 +73,126 @@ a{
     background: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
+    .content-contato {
+        background-color: #fdf9f7;
+        width: 360px;
+        height: 350px;
+        padding: 20px;
+        border-radius: 10px;
+        .header-contato{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .fechar-btn{
+            position: absolute;
+            right: 0;
+            font-size: 30px;
+            color: #d85504;
+        }
+        h2{
+            color: #382D23;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .message{
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .address{
+            text-decoration: underline;
+            color: blue;
+        }
+        .email-body{
+            width: 350px;
+            height:104px;
+            border-radius: 12px;
+            border: #d85504 2px solid;
+            margin-top: 3px;
+            margin-bottom: 15px;
+            resize: none;
+        }
+        .enviar-btn {
+            border-radius: 20px;
+            height: 35px;
+            width: 80px;
+            margin: 0 12px 0 auto;
+            display: grid;
+            justify-content: center;
+            align-items: center; 
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #FF9F62;
+        }
+    }
 }
-
-/* Card do modal */
-.content-contato {
-    background-color: #fdf9f7;
-    width: 300px;
-    height: 250px;
-    padding: 20px;
-    border-radius: 10px;
-    .fechar-btn{
-        font-size: 30px;
-        color: #d85504;
-    }
-    h2{
-        color: #382D23;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    p{
-        text-align: left;
-    }
-    .email{
-        text-decoration: underline;
-        color: blue;
-    }
-}
-
 #card-contato:target {
     display: flex;
 }
+
+
+
+.card-sobre {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    .content-sobre {
+        width: 600px;
+        margin: 50px auto;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .header-sobre {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .fechar-btn{
+            position: absolute;
+            right: 0;
+            font-size: 30px;
+            color: #d85504;
+        }
+        .perfil {
+            width: 700px;
+            margin-right: 20px;
+            background-size: cover;
+        }
+        .img-perfil{
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        .sobre {
+            display: flex;
+            align-items: flex-start;
+            padding-top: 20px;
+        }
+        .text-content h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #382D23;
+        }
+        .text-content p {
+            font-size: 16px;
+        }
+    }
+    
+}
+#card-sobre:target {
+    display: flex;
+}
+
+
 
 
 @media (max-width:769px) {
@@ -131,17 +221,39 @@ a{
             }
         }
     }
-    .content-contato {
-        h2{
-            font-size: 20px;
-        }
-        p{
-            font-size: 15px;
-        }
-        width: 250px;
-        height: 200px;
-        .fechar-btn{
-            font-size: 25px;
+    .card-contato{
+        .content-contato {
+            width: 250px;
+            height: 305px;
+            padding: 18px;
+            h2{
+                color: #382D23;
+                text-align: center;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                font-size: 19px;
+            }
+            .message{
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+            label{
+                font-size: 14px; 
+            }
+            .email-body{
+                width: 240px;
+                height:94px;
+                border-radius: 12px;
+                margin-top: 3px;
+                margin-bottom: 8px;
+            }
+            .enviar-btn {
+                border-radius: 20px;
+                height: 28px;
+                width: 75px;
+                margin: 0 12px 0 auto;
+                font-size: 14px;
+            }
         }
     }
 }
