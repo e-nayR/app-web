@@ -72,6 +72,8 @@ body{
 }
 
 .ver-btn {
+    text-decoration: none;
+    color: black;
     border-radius: 23px;
     height: 26px;
     width: 51px;
