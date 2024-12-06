@@ -1,0 +1,115 @@
+body{
+    overflow-x: hidden; /* Remove a rolagem horizontal */
+    overflow-y: auto;
+}
+
+ul{
+    padding-left: 20px; /* Restaura o espaçamento à esquerda */
+    list-style-type: disc; /* Define o estilo do marcador, por exemplo, "disc" */
+  }
+ol {
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+/* Centralizar o conteúdo */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-top{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 650px;
+}
+
+.voltar-btn{
+    position: absolute;
+    left: 0;
+}
+
+.title-receita {
+    text-align: center;
+    font-size: 30px;
+}
+
+.title-receita,.receita-topico{
+    color: #382D23;
+}
+
+.receita-container-img{
+    margin-left: 20px;
+    margin-top: 13px;
+    background-size: cover;
+    width: 300px;
+}
+
+.receita-img{
+    max-width: 100%;
+    max-height: 223px;
+}
+
+/* Ajustes para o modo de preparo */
+.receita-topico {
+    font-size: 24px;
+    margin-top: 13px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.topico-ingredientes{
+    display: flex;
+    max-width: 644px;
+}
+
+.topico-preparo{
+    max-width: 644px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:426px) {
+    .content-top{
+        margin-top: 3px;
+        width: 300px;
+        flex-direction: column;
+        position: static;  
+    }
+    .voltar-btn{
+        position: static;
+    }
+    .title-receita{
+        font-size: 25px;
+    }
+    .receita-topico {
+        font-size: 19px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .topico-ingredientes{
+        flex-direction: column;
+        max-width: 335px;
+    }
+    .topico-preparo{
+        max-width: 335px;
+    }
+    .receita-container-img{
+        margin-top: 10px;
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto;
+        width: auto;
+    }
+}
+
+@media (max-width:321px){
+    .topico-ingredientes,.topico-preparo{
+        padding: 20px;
+    }
+}
