@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almoço e Janta</title>
+    <link rel="shortcut icon" href="./icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./estilos/global.css">
+    <link rel="stylesheet" href="./estilos/categoria.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    .categoria-titulo{
+        color: #FFCC00;
+    }
+    .receita-container{
+        background-color: #fcf5d5;
+    }
+    .ver-btn{
+        background-color: #FFCC00;
+    }
+</style>
+<body>
+    <nav class="menubar">
+        <h1 class="menubar-title">Chef's Kisses</h1>
+        <div class="menu-itens">
+            <span class="menu-item sobre-mim" id="nav-item-sobre">Sobre a autora</span>  
+            <span class="menu-item" id="nav-item-contato">Contato</span>
+        </div>
+    </nav>
+    <main class="content">
+        <div class="content-top">
+            <a href="./index.html" class="voltar-btn">Categorias</a>
+            <div class="categoria-titulo">Almoço & Janta</div>
+        </div>
+        <div class="receitas lh-1">
+            <div class="receita-container">
+                <div class="receita-container-img">
+                    <img src="./imagens/receitas-cover/arroz.png" alt="" class="receita-img">
+                </div>
+                <div class="receita-info">
+                    <p class="receita-nome">Arroz de Camarão</p>
+                    <p class="receita-text">É uma receita que combina sofisticação e praticidade, ideal para quem busca um jantar leve e sofisticado, mas com aquele sabor caseiro e acolhedor.</p>
+                    <a href="./receita.html?id=camarao" class="ver-btn">Ver</a>
+                </div>
+            </div>
+            <div class="receita-container">
+                <div class="receita-container-img">
+                    <img src="./imagens/receitas-cover/macarrao.png" alt="" class="receita-img">
+                </div>
+                <div class="receita-info">
+                    <p class="receita-nome">Macarrão ao Molho Branco</p>
+                    <p class="receita-text">Simples, mas sofisticado, esse prato é ideal tanto para um jantar rápido quanto para momentos especiais.</p>
+                    <a href="./receita.html?id=macarrao" class="ver-btn">Ver</a>
+                </div>
+            </div>
+            <div class="receita-container">
+                <div class="receita-container-img">
+                    <img src="./imagens/receitas-cover/lasanha.png" alt="" class="receita-img">
+                </div>
+                <div class="receita-info">
+                    <p class="receita-nome">Lasanha a Bolonhesa</p>
+                    <p class="receita-text">Ideal para um almoço em família ou um jantar especial, esta lasanha agrada a todos os gostos com sua textura equilibrada e sabor irresistível.</p>
+                    <a href="./receita.html?id=lasanha" class="ver-btn">Ver</a>
+                </div>
+            </div>
+            <div class="receita-container">
+                <div class="receita-container-img">
+                    <img src="./imagens/receitas-cover/frango.png" alt="" class="receita-img">
+                </div>
+                <div class="receita-info">
+                    <p class="receita-nome">Frango Acebolado</p>
+                    <p class="receita-text">Ideal para acompanhar arroz branco ou uma farofa crocante, esse prato vai impressionar em qualquer ocasião com sua simplicidade e sofisticação.</p>
+                    <a href="./receita.html?id=frango" class="ver-btn">Ver</a>
+                </div>
+            </div>
+        </div>
+        </main>
+    <div id="componentes"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./script/main.js"></script>
+</html>
